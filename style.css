@@ -1,0 +1,75 @@
+header {
+    font-family: Futura, Trebuchet MS;
+    font-weight: bold condensed;
+    text-align: center;
+    color: #AC2B37; 
+    font-size: 30px;
+    padding: 10px;
+    width: 100%;
+}
+
+body{
+    font-family: Arial;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #f40519;
+    font-size: 20px;
+}
+
+h1 {
+    color: #AC2B37;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#content {
+    padding: 5px;
+}
+
+p {
+    padding: 5px;
+}
+
+#BYD {
+    /* center the image */
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main_nav ul { padding: 0; margin: 0; }
+
+#main_nav li  {
+  list-style-type: none; /* remove bullet points */ 
+}
+
+#main_nav li a {
+   display: block;
+   text-decoration: none; /* remove underline */
+   border-radius: 15px;  /* rounded corners */
+   margin: 5px;
+   padding: 10px;
+   color: #222;
+   font-weight: bold;
+
+   /* nice gradient shade on the buttons */
+   background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+
+   border: 1px solid #666; /* dark outline */
+}
+
+nav li:active {
+  background-color: #ccc;
+  background-image: none;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, .2);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #666666;
+    border-top: 1px solid #bababa;
+}
