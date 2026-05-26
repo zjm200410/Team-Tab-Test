@@ -39,6 +39,7 @@
 
     <script>
     async function sendDepartmentMessage(department) {
+        try{
         await fetch("https://defaultfc60bdc667454d76956e92242aacc4.c3.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/149f6815c09a420a84bc639cfc6905fe/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Pa5geOrTLd8unM5qDKaPDN85x2WKlXD2i1f_9Cyp0H4", {
             method: "POST",
             headers: {
@@ -48,8 +49,13 @@
                 text: "User selected: " + department
             })
         });
-
+        console.log(response);
         alert("Message sent: " + department);
+    }
+        catch(error) {
+            console.error(error);
+        }
+
     }
     </script>
 </body>
