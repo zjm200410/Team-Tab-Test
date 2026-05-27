@@ -51,12 +51,7 @@
                 "Content-Type": "application/json"
                 },
                     body: JSON.stringify({
-                        "@type": "MessageCard",
-                        "@context": "https://schema.org/extensions",
-                        "summary": "Department Selected",
-                        "themeColor": "AC2B37",
-                        "title": "Department Selected",
-                        "text": "User selected: " + department
+                        department: department
                 })
             });
 
